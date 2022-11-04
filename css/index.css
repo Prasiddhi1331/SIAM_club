@@ -10,15 +10,19 @@
     align-items: center;
     justify-content: space-between;
     height: 60px;
-    padding: 0px 80px;
+    padding: 0px 8rem;
     background-color: white;
     margin: auto;
+
+    position: relative;
+    
   }
   
   .navbar a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 1vw;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
   }
   
   .navbar a img {
@@ -27,7 +31,8 @@
   }
   .navbar__menu_container {
     display: flex;
-    gap: 30px;
+    margin: 0;
+    gap: 40px;
   }
 
   .navbar__menu_container .user__icon {
@@ -39,6 +44,18 @@
     display: none;
   }
 
+  .link {
+    font-size: 3vw;
+  }
+
+  .link:hover {
+    color: #2e3234;
+    transform: scale(1.1);
+  }
+
+  .link:focus {
+    color: red;
+  }
 
   .hero_section {
     display: flex;
@@ -53,7 +70,7 @@
   }
 
   .hero_img {
-    /* width: 100%; */
+    width: 50%;
   /* height: 100vh; */
   position: relative;
   padding: 0px;
@@ -75,6 +92,7 @@
   font-size: 2.8vw;
   font-weight: 700;
   margin: 30px;
+  width: 50%;
   font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   .hero_text h2 {
@@ -222,49 +240,3 @@
 }  */
 
 
-div#carousel { 
-    perspective: 1200px; 
-    background: #E8E6DF; 
-    padding: 5%; 
-    font-size:0; 
-    margin-bottom: 3rem; 
-    overflow: hidden; 
-  }
-  figure#spinner { 
-    transform-style: preserve-3d; 
-    height: 300px; 
-    transform-origin: 50% 50% -500px; 
-    transition: 1s; 
-  } 
-  figure#spinner img { 
-    width: 40%; max-width: 425px; 
-    position: absolute; left: 30%;
-    transform-origin: 50% 50% -500px;
-    outline:1px solid transparent; 
-  }
-  figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
-  }
-  figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
-  figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
-  figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
-  figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
-  figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
-  figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
-  figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
-  div#carousel ~ span { 
-    color: #fff; 
-    margin: 5%; 
-    display: inline-block; 
-    text-decoration: none; 
-    font-size: 2rem; 
-    transition: 0.6s color; 
-    position: relative; 
-    margin-top: -6rem; 
-    border-bottom: none; 
-    line-height: 0; }
-
-  div#carousel ~ span:hover { color: #888; cursor: pointer; }
-
-
-
-  
