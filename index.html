@@ -11,6 +11,11 @@
   <!-- <link rel="stylesheet" href="./css/resp.css"> -->
   <script src="./js/index.js"></script>
 
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,25 +30,25 @@
 <body>
 
   <header>
-    <nav class="navbar">
-      <a href="./html/index.html"> <img src="./images/SIAM logo No Background 2.png"> </a>
-      <div class="navbar__menu_container">
-        <a href="#" class="link">About Us</a>
-        <a href="#" class="link">Oppurtunities</a>
-        <a href="#" class="link">Workshops</a>
-        <a href="#" class="link">Team</a>
-        <a href="#" class="link">Media</a>
-        <a href="#" class="user__icon"><i class="fa fa-bars" aria-hidden="true"></i>
-        </a>
+    <div class="nav">
+      <div class="logo">
+        <a href="./html/index.html"><img src="./images/SIAM logo No Background 2.png"></a>
       </div>
-    </nav>
+      <div class="nav-links" tabindex="1">
+        <div class="link"><a href="#" class="link">About Us</a></div>
+        <div class="link"><a href="#" class="link">Oppurtunities</a></div>
+        <div class="link"><a href="#" class="link">Team</a></div>
+        <div class="link"><a href="#" class="link">Workshops</a></div>
+        <div class="link"><a href="#" class="link">Media</a></div>
+      </div>
+    </div>
   </header>
 
   <div class="hero_section">
 
     <div class="hero_text">
       <img src="./images/SIAM logo No Background 2.png">
-      <h2>STUDENT CHAPTER VIT BHOPAL</h2>
+      <!-- <h2>STUDENT CHAPTER VIT BHOPAL</h2> -->
       <p>Lorem, ipsum dolor sit amet consectetur
         adipisicing elit. Fugiat vero illo excepturi rerum porro id aliquid laudantium culpa non autem ullam in dolor
         dolore, nulla corporis tempora similique nisi commodi.</p>
@@ -59,37 +64,8 @@
 
 
 
-  <!-- <div class="event_card">
-            <div class="card1">
-                <div class="card_1">
-                    <img src="https://afd-imaginecup-prod.azurefd.net/blob/imagine/public/images/btf_block_1.png">
-                    <div class="content">
-                        <h4>Shape the world</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro unde cumque doloremque accusantium aut deleniti at facere tempore? Dolores sint, necessitatibus illo optio voluptatem molestiae temporibus aliquid? Perspiciatis, dignissimos minus!</p>
-                    </div>
-                </div>
-            </div>
+  
 
-            <div class="card1">
-                <div class="card_1">
-                    <img src="https://afd-imaginecup-prod.azurefd.net/blob/imagine/public/images/btf_block_1.png">
-                    <div class="content">
-                        <h4>Shape the world</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro unde cumque doloremque accusantium aut deleniti at facere tempore? Dolores sint, necessitatibus illo optio voluptatem molestiae temporibus aliquid? Perspiciatis, dignissimos minus!</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card1">
-                <div class="card_1">
-                    <img src="https://afd-imaginecup-prod.azurefd.net/blob/imagine/public/images/btf_block_1.png">
-                    <div class="content">
-                        <h4>Shape the world</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro unde cumque doloremque accusantium aut deleniti at facere tempore? Dolores sint, necessitatibus illo optio voluptatem molestiae temporibus aliquid? Perspiciatis, dignissimos minus!</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
         <!-- ayushri -->
 
@@ -102,33 +78,29 @@
   <main class="page-content">
     <div class="card1">
       <div class="content1">
-        <h2 class="title">Shape the world</h2>
-        <p class="copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro unde cumque doloremque
-          accusantium aut deleniti at facere tempore? Dolores sint, necessitatibus illo optio</p>
+        <h2 class="title">Seminars</h2>
+        <p class="copy">"Let us walk into the seminar room as equals and not second class citizens.”</p>
         <button class="btn">View </button>
       </div>
     </div>
     <div class="card1">
       <div class="content1">
-        <h2 class="title">Shape the world</h2>
-        <p class="copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro unde cumque doloremque
-          accusantium aut deleniti at facere tempore? Dolores sint, necessitatibus illo optio</p>
+        <h2 class="title">Lectures</h2>
+        <p class="copy">“Some people talk in their sleep. Lecturers talk while other people sleep”</p>
         <button class="btn">View </button>
       </div>
     </div>
     <div class="card1">
       <div class="content1">
-        <h2 class="title">Shape the world</h2>
-        <p class="copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro unde cumque doloremque
-          accusantium aut deleniti at facere tempore? Dolores sint, necessitatibus illo optio</p>
+        <h2 class="title">Workshops</h2>
+        <p class="copy">"Great things are done by a series of small things brought together.”</p>
         <button class="btn">View</button>
       </div>
     </div>
     <div class="card1">
         <div class="content1">
-          <h2 class="title">Shape the world</h2>
-          <p class="copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro unde cumque doloremque
-            accusantium aut deleniti at facere tempore? Dolores sint, necessitatibus illo optio</p>
+          <h2 class="title">Other Activity</h2>
+          <p class="copy">"Happiness is a state of activity it is the elixir of life.”</p>
           <button class="btn">View</button>
         </div>
     </div>
@@ -188,6 +160,100 @@
         </a>
   </section>
 
+
+
+
+
+  <!-- media -->
+
+  <div class="event_title">
+    <h1> Media </h1>
+  </div>
+  
+  <div class="vid">
+    <h1>Video</h1>
+  </div>
+
+  <div class="wrapper">
+    <div class="carousel owl-carousel">
+      <div class="carde carde-1"><iframe src="https://drive.google.com/file/d/1U6ZTKZqI99TWluxevwmqQUKadkZJbYG3/preview"  allow="autoplay"></iframe></div>
+      <div class="carde carde-2"><iframe src="https://drive.google.com/file/d/1DU8r8yJCGVjgxwokge92Vj6C5SOmhmwg/preview"  allow="autoplay"></iframe></div>
+      <div class="carde carde-3"><iframe src="https://drive.google.com/file/d/1U6ZTKZqI99TWluxevwmqQUKadkZJbYG3/preview"  allow="autoplay"></iframe></div>
+      <div class="carde carde-4"><iframe src="https://drive.google.com/file/d/1DU8r8yJCGVjgxwokge92Vj6C5SOmhmwg/preview"  allow="autoplay"></iframe></div>
+      <div class="carde carde-5"><iframe src="https://drive.google.com/file/d/1U6ZTKZqI99TWluxevwmqQUKadkZJbYG3/preview"  allow="autoplay"></iframe></div>
+    </div>
+   
+  </div>
+
+  <div class="vid">
+    <h1>Podcast</h1>
+  </div>
+
+  <div class="wrapper">
+    <div class="carousel owl-carousel">
+      <div class="carde carde-1"><iframe src="https://drive.google.com/file/d/1yyYGOU87adQq5bMHuCAW9EfXvQfVANlE/preview"  allow="autoplay"></iframe></div>
+      <div class="carde carde-2"><audio controls="controls">
+        <source src="https://drive.google.com/file/d/1yyYGOU87adQq5bMHuCAW9EfXvQfVANlE/preview">
+      </audio></iframe></div>
+      <div class="carde carde-3"><iframe src="https://drive.google.com/file/d/1U6ZTKZqI99TWluxevwmqQUKadkZJbYG3/preview"  allow="autoplay"></iframe></div>
+      <div class="carde carde-4"><iframe src="https://drive.google.com/file/d/1U6ZTKZqI99TWluxevwmqQUKadkZJbYG3/preview"  allow="autoplay"></iframe></div>
+      <div class="carde carde-5"><iframe src="https://drive.google.com/file/d/1U6ZTKZqI99TWluxevwmqQUKadkZJbYG3/preview"  allow="autoplay"></iframe></div>
+    </div>
+   
+  </div>
+
+  <div class="vid">
+    <h1>Blog</h1>
+  </div>
+
+  <div class="wrapper">
+    <div class="carousel owl-carousel">
+      <div class="carde carde-1"><iframe src="https://drive.google.com/file/d/1U6ZTKZqI99TWluxevwmqQUKadkZJbYG3/preview"  allow="autoplay"></iframe></div>
+      <div class="carde carde-2"><iframe src="https://drive.google.com/file/d/1U6ZTKZqI99TWluxevwmqQUKadkZJbYG3/preview"  allow="autoplay"></iframe></div>
+      <div class="carde carde-3"><iframe src="https://drive.google.com/file/d/1U6ZTKZqI99TWluxevwmqQUKadkZJbYG3/preview"  allow="autoplay"></iframe></div>
+      <div class="carde carde-4"><iframe src="https://drive.google.com/file/d/1U6ZTKZqI99TWluxevwmqQUKadkZJbYG3/preview"  allow="autoplay"></iframe></div>
+      <div class="carde carde-5"><iframe src="https://drive.google.com/file/d/1U6ZTKZqI99TWluxevwmqQUKadkZJbYG3/preview"  allow="autoplay"></iframe></div>
+    </div>
+   
+  </div>
+
+  <script>
+    $(".carousel").owlCarousel({
+      margin:15,
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:4000,  //4000ms = 4sec
+      autoplayHoverPause: true,
+      responsive: {
+        0:{
+          items:1,
+          nav:false
+        },
+        600:{
+          items:2,
+          nav:false
+        },
+        1000:{
+          items:3,
+          nav:false
+        }
+      }
+
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- media -->
+
   <!-- Venkatesh -->
 
   <footer class="footer">
@@ -226,8 +292,9 @@
   <!-- Venkatesh -->
 
 
-
   
+
+
 
 </body>
 
