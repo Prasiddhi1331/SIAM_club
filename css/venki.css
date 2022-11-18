@@ -6,11 +6,11 @@
 }
 .row{
   line-height: 1.5;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
 
 }
 

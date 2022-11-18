@@ -24,6 +24,17 @@
     max-width: 500px;
   }
 
+  @media screen and (min-width: 0px) and (max-width: 430px){
+    .hero_img{
+      max-width: 100vw;
+    }
+    .hero_text img {
+      max-width: 50%;
+      height: 200px;
+    }
+  }
+    
+  
   .hero_text {
     position: relative;
     text-align: center;
@@ -522,15 +533,17 @@
     font-size: medium;
 }
 
-/* .toggle{
-  height:70px;
-  width:70px;
-  background:green;
+.toggle{
+  height:60px;
+  width:60px;
+  /* background:rgb(66, 68, 66); */
   position:relative;
   display:none;
+  border-radius: 50px;
+  border: 1px solid black;
   transition-duration: 100ms;
   transition-timing-function: ease;
-} */
+}
 
 @media screen and (min-width: 0px) and (max-width: 430px){
   .toggle{
