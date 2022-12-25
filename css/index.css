@@ -171,7 +171,7 @@
     height: 20vh;
     position: relative;
     margin: 0px;
-    padding: 8% 0 4% 0;
+    padding: 8% 0 8% 0;
 
 }
 @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap"); */
@@ -401,13 +401,15 @@
 
 .card__heading{
   color: var(--text-lighter);
-  font-size: 1.9rem;
-  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
-  line-height: 1.4;
-  word-spacing: 100vw;
-  text-align: center;
-  position: relative;
-  margin: 20px;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+    line-height: 1.4;
+    word-spacing: 100vw;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    top: 30px;
 }
 /* Oppurtunities_Section */
   
@@ -504,6 +506,7 @@ iframe:hover {
 /* Newsletter */
 .opp-section{
   background-color: #E8E6DF;
+  height: 80vh;
 }
 .oppcards-list {
   z-index: 0;
