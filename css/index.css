@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
   }
 
 /* Navbar */
@@ -94,14 +95,14 @@
     font-size: 2.4rem;
     font-weight: 700;
     width: 50%;
-    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
   }
 
   .hero_text p {
     line-height: 32px;
     font-weight: 400;
     font-size: 1.2rem;
-    font-family: 'Google Sans', sans-serif;
+    /* font-family: 'Google Sans', sans-serif; */
   }
 
   .hero_img {
@@ -157,8 +158,12 @@
   .event_title h1 {
     text-transform: capitalize;
     font-size: 2.2rem;
-    line-height: 48px;
     font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .event_title p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
   }
 
   
@@ -207,6 +212,7 @@
   background-color: whitesmoke;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
   border-radius: 3%;
+  margin-bottom: 60px;
 }
 
 .card1:before {
@@ -415,16 +421,17 @@
   
  
 /* Media_section */
-.vid h1 {
+.vid {
   position: relative;
+  margin-right: 78vw
+}
+.vid h1 {
   font-size: 35px;
   font-weight: 800;
   color: black;
-  text-align: left;
-  left: 15px;
-  margin: 15px;
-  margin-left: 30px;
+  font-family: 'Josefin Sans', sans-serif;
 }
+
 .wrapper {
   width: 100%;
 }
@@ -492,10 +499,28 @@ iframe {
   box-shadow: 10px 10px 5px rgba(86, 108, 115, 0.371);
 }
 
-iframe:hover {
+/* iframe:hover {
   border: 5px solid green;
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+} */
+
+.blog_ime {
+  height: 15vw;
+  border: none;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer;
 }
+.bottom-left {
+  position: absolute;
+  bottom: 45px;
+  left: 30px;
+  color: #F6BE00;;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+
 
 
 
@@ -506,7 +531,7 @@ iframe:hover {
 /* Newsletter */
 .opp-section{
   background-color: #E8E6DF;
-  height: 80vh;
+  /* height: 100vh; */
 }
 .oppcards-list {
   z-index: 0;
@@ -586,7 +611,9 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   .oppcard{
     width: 75vw;
   }
-
+  .blog_ime{
+    height: 60vw;
+  }
 }
 
 @media(min-width: 540px){
