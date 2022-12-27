@@ -6,27 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="./js/index.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/hall.css">
+  <link rel="stylesheet" href="./css/pre.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="./images/SIAM logo Circular.png">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/footer.css">
-  <link rel="stylesheet" href="./css/hall.css">
-  <!-- fonts -->
+  <!-- script -->
+  <script src="./js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
+  <link rel="icon" type="image/x-icon" href="./images/SIAM logo Circular.png">
   <title>SIAM</title>
 </head>
 
 <body>
+  <div id="loader"></div>
+  <script type = "text/javascript">   
+    setTimeout(function(){
+       document.getElementById("loader").style.display="none";
+    }, 5000);  
+  </script>
 <!-- Navbar -->
   <header>
     <div class="nav">
@@ -261,7 +270,7 @@
 
 
 <!-- Newsletter -->
-<section class="opp-section" id="c5">
+<!-- <section class="opp-section" id="c5">
   <div class="event_title">
     <h1>Newsletter</h1>
     <p>Are you missing something?</p>
@@ -303,11 +312,11 @@
       </div>
       </div>
     
-    </div>
+    </div> -->
     <!-- <div class="learn">
       <a href="#"><button>Show more</button></a>
     </div> -->
-</section>
+<!-- </section> -->
 <!-- Newsletter -->
 
 <!-- Hall of Fame -->
@@ -315,6 +324,42 @@
   <div class="hall_title">
     <img src="./images/hall of fame.png">
   </div>
+
+  <div class="oppcards-list">
+  
+    <div class="oppcard 1">
+      <div class="card_image"> <img src="https://media.tenor.com/0bN9L54PMmsAAAAC/coming-soon-see-it-soon.gif" /> </div>
+      <div class="card_title title-white">
+        <p>Card Title</p>
+      </div>
+    </div>
+    
+      <div class="oppcard 2">
+      <div class="card_image">
+        <img src="https://media.tenor.com/0bN9L54PMmsAAAAC/coming-soon-see-it-soon.gif" />
+        </div>
+      <div class="card_title title-white">
+        <p>Card Title</p>
+      </div>
+    </div>
+    
+    <!-- <div class="oppcard 3">
+      <div class="card_image">
+        <img src="https://media.tenor.com/0bN9L54PMmsAAAAC/coming-soon-see-it-soon.gif" />
+      </div>
+      <div class="card_title">
+        <p>Card Title</p>
+      </div>
+    </div>
+      
+      <div class="oppcard 4">
+      <div class="card_image">
+        <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+        </div>
+      <div class="card_title title-black">
+        <p>Card Title</p>
+      </div>
+      </div> -->
 
   
 

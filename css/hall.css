@@ -1,6 +1,6 @@
 .hall-section{
-    /* background-color: #E8E6DF; */
-    height: 100vh;
+  background-color: #e8e0df;
+  /* height: 100vh; */
   }
 
 .hall_title {
@@ -29,7 +29,7 @@ h1{
   margin: 2rem 0;
 }
 
-.wrapper{
+/* .wrapper{
   width: 90%;
   margin: 0 auto;
   max-width: 80rem;
@@ -204,4 +204,4 @@ h1{
     width: 100%;
     margin: 0 0 2rem 0;
   }
-}
+} */
