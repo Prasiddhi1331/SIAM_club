@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .seminar {
@@ -19,11 +21,12 @@
     height: 100vh;
     border: none;
     border-radius: 5px;
+    margin: auto;
 }
 
 .seminar .column {
     width: 50%;
-    /* height: 50vh; */
+    
     padding: 0 10px;
     display: flex;
     flex-direction: row;
@@ -35,58 +38,134 @@
 
 }
 
-.card {
-    background-color: #fff;
+.seminar .column .card {
+    background-image: linear-gradient(#D7E1EC,#FFFFFF);
     max-width: 540px;
-    box-shadow: 0 0 calc(1.325rem + 0.9vw) rgba(0, 0, 0, 0.25);
-    border-radius: calc(1.525rem + 3.3vw);
-    padding: calc(1.425rem + 2.1vw);
-    margin: calc(1.325rem + 0.9vw);
     text-align: center;
     justify-content: center;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    padding: 3rem;
+    margin: 2rem;
+    font-size: 2.2rem;
   }
      
-  .card h1{
+  .seminar .column .card h1{
     font-size: calc(1.345rem + 1.14vw);
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 0.5em;
   }
-  .card h4{
+  .seminar .column .card h4{
     font-size: large;
     line-height: 1.2;
     margin-bottom: 1em;
   }
-  .card p{
+  .seminar .column .card p{
     font-size: 18px;
-    text-align: justify;
     line-height: 1.2;
     margin-bottom: 0.5em;
     margin: 10px;
   }
+
+
+  button, button::after {
+    width: 250px;
+    height: 70px;
+    font-size: 30px;
+    /* font-family: 'Bebas Neue', cursive; */
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 8px;
+    box-shadow: 6px 0px 0px #00e6f6;
+    outline: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'AVAILABLE NOW';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
           
-  @media (min-width: 1200px) {
-    .card {
-      box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
+  
+
+  @media screen and (min-width: 0px) and (max-width: 430px){
+    .seminar img{
+      height: 50vh;
     }
+    
   }
-  @media (min-width: 1200px) {
-    .card {
-      border-radius: 4rem;
-    }
-  }
-  @media (min-width: 1200px) {
-    .card {
-      padding: 3rem;
-    }
-  }
-  @media (min-width: 1200px) {
-    .card {
-      margin: 2rem;
-    }
-  }
-  @media (min-width: 1200px) {
-    .card h1 {
-      font-size: 2.2rem;
-    }
-  }
+  
+
+  
