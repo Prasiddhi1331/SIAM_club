@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/hall.css">
   <link rel="stylesheet" href="./css/pre.css">
+  <link rel="stylesheet" href="./css/nav.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -18,7 +19,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <!-- script -->
-  <script src="./js/index.js"></script>
+
+  <script src="./js/index.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -30,35 +32,41 @@
 </head>
 
 <body>
-  <div id="loader"></div>
-  <script type = "text/javascript">   
-    setTimeout(function(){
-       document.getElementById("loader").style.display="none";
-    }, 5000);  
-  </script>
-<!-- Navbar -->
-  <header>
-    <div class="nav">
-      <div class="logo">
-        <a href="#">
-          <img src="./images/SIAM logo No Background 2.png">
+
+  <!-- navbar -->
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#!">
+          <img src="./images/SIAM logo No Background 2.png" alt="">
         </a>
       </div>
-      <div class="nav-links" tabindex="1">
-        <div class="link"><a href="#c1" class="link">About Us</a></div>
-        <div class="link"><a href="#c3" class="link">Oppurtunities</a></div>
-        <div class="link"><a href="./team.html" target="_blank" class="link">Team</a></div>
-        <div class="link"><a href="#c2" class="link">Workshops</a></div>
-        <div class="link"><a href="#c4" class="link">Media</a></div>
-        <div class="link"><a href="#c5" class="link">Newsletter</a></div>
-        <div class="toggle">
-          <i class='fas fa-align-justify' style="font-size: 30px; margin:12px; padding: 3px;"></i>
-        </div>
-      </div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="#c1">About Us</a>
+          </li>
+          <li>
+            <a href="#c3">Opportunities</a>
+          </li>
+          <li>
+            <a href="./team.html">Team</a>
+          </li>
+          <li>
+            <a href="#c2">Workshops</a>
+          </li>
+          <li>
+            <a href="#c4">Media</a>
+          </li>
+          <li>
+            <a href="#c5">Newsletter</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </header>
-  <!-- Navbar -->
-
+  </section>
+    <!-- navbar -->
 
 <!-- Hero_page -->
   <div class="hero_section" id="c1">
