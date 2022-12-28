@@ -162,7 +162,7 @@
 
   @media screen and (min-width: 0px) and (max-width: 430px){
     .seminar img{
-      height: 100%;
+      width: 100%;
     }
     
   }
